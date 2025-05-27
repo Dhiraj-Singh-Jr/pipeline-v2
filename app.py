@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 def analyze_sentiment(text):
     if "good" in text.lower():
-        return "Positive"
+        return "Positivee"
     else:
         return "Negative"
 
