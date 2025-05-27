@@ -6,7 +6,7 @@ def analyze_sentiment(text):
     if "good" in text.lower():
         return "Positivee"
     else:
-        return "Negative"
+        return "Negativee"
 
 @app.route("/", methods=["GET", "POST"])
 def index():
