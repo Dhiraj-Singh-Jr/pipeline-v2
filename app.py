@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 def analyze_sentiment(text):
     if "good" in text.lower():
-        return "Positivee"
+        return "Positive"
     else:
-        return "Negativee"
+        return "Negative"
 
 @app.route("/", methods=["GET", "POST"])
 def index():
