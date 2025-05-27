@@ -9,4 +9,11 @@ pipeline {
             }
         }
     }
+    stage('Lint Check') {
+        steps {
+            echo '🔍 Running lint checks...'
+            sh 'pylint *.py || true'  // Example for Python; adjust as needed
+            // Add your linting commands here, e.g., sh 'npm run lint'
+        }
+    }
 }
